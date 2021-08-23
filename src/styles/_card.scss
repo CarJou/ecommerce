@@ -1,0 +1,55 @@
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 30px;
+  margin: 30px;
+  height: 22rem;
+  padding: 35px;
+  box-shadow: 0 3px 10px $shadow;
+}
+//like button
+.container_like {
+  display: flex;
+  justify-content: flex-end;
+  right: 6px;
+  .likeButton {
+    border: none;
+    background: none;
+    width: 25px;
+    z-index: 2;
+    position: absolute;
+  }
+}
+
+.imgCard {
+  width: 200px;
+  border-radius: 12px;
+}
+//content card
+.priceCard {
+  margin: 0;
+}
+//add button
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  .addButton {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 12rem;
+    justify-content: space-evenly;
+    padding: 4px;
+    border-radius: 15px;
+    .icon_cart {
+      width: 30px;
+    }
+  }
+}
