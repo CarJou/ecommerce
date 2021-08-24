@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import heart from "../../assets/icons/heart.png";
+import heart from "../../assets/icons/heart.svg";
 import RedHeart from "../../assets/icons/redheart.png";
 
 const LikeButton = () => {

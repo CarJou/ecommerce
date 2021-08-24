@@ -1,0 +1,19 @@
+.container_navbar {
+  background-color: $deep-purple;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .brand_name {
+    color: $purple-clear;
+    margin-left: 10px;
+  }
+}
+.cart_brand {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.02);
+  }
+}

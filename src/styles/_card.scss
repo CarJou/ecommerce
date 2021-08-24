@@ -10,7 +10,7 @@
   flex-direction: column;
   border-radius: 30px;
   margin: 30px;
-  height: 22rem;
+  height: auto;
   padding: 35px;
   box-shadow: 0 3px 10px $shadow;
 }
@@ -18,16 +18,21 @@
 .container_like {
   display: flex;
   justify-content: flex-end;
-  right: 6px;
   .likeButton {
     border: none;
     background: none;
     width: 25px;
     z-index: 2;
     position: absolute;
+    margin-right: 7.3px;
+    cursor: pointer;
   }
 }
-
+//product img
+.container_img {
+  display: flex;
+  justify-content: center;
+}
 .imgCard {
   width: 200px;
   border-radius: 12px;
@@ -35,6 +40,13 @@
 //content card
 .priceCard {
   margin: 0;
+  letter-spacing: 2.2px;
+}
+//container price and add button
+.container_flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 //add button
 .buttonContainer {
@@ -44,10 +56,17 @@
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    width: 12rem;
-    justify-content: space-evenly;
-    padding: 4px;
-    border-radius: 15px;
+    padding: 7px;
+    border-radius: 50%;
+    background-color: $violet-dark;
+    box-shadow: 1px 3px 5px $shadow;
+    transition: transform 0.3s, background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.02);
+      background-color: $violet;
+    }
     .icon_cart {
       width: 30px;
     }
