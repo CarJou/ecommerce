@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 
-const ProductDetail = ({ match }) => {
+const ProductDetail = () => {
   const { id } = useParams();
 
   return <>Product id: {id}</>;
