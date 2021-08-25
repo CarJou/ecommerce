@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react";
 export const ProductContext = createContext();
 
 const ProductProvider = (props) => {
+  const [productDetail, setProductDetail] = useState(null);
   const [products, setProducts] = useState([
     {
       id: 0,
@@ -48,7 +49,7 @@ const ProductProvider = (props) => {
   ]);
 
   return (
-    <ProductContext.Provider value={{ products }}>
+    <ProductContext.Provider value={{ products, setProductDetail }}>
       {props.children}
     </ProductContext.Provider>
   );
