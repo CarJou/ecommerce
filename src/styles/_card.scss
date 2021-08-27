@@ -72,3 +72,15 @@
     }
   }
 }
+@media only screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card_container {
+    width: 30%;
+    height: 20rem;
+  }
+}
