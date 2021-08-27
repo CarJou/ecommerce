@@ -1,3 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+.container {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .card_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,15 +23,250 @@
           flex-direction: column;
   border-radius: 30px;
   margin: 30px;
-  height: 20rem;
+  height: auto;
   padding: 35px;
   -webkit-box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
           box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
+}
+
+.container_like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container_like .likeButton {
+  border: none;
+  background: none;
+  width: 25px;
+  z-index: 2;
+  position: absolute;
+  margin-right: 7.3px;
+  cursor: pointer;
+}
+
+.container_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgCard {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.priceCard {
+  margin: 0;
+  letter-spacing: 2.2px;
+}
+
+.container_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonContainer .addButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: #651fff;
+  -webkit-box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.699);
+          box-shadow: 1px 3px 5px rgba(128, 128, 128, 0.699);
+  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: background-color 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonContainer .addButton:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #7c4dff;
+}
+
+.buttonContainer .addButton .icon_cart {
+  width: 30px;
+}
+
+.container_navbar {
+  background-color: #5e35b1;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container_navbar .brand_name {
+  color: #ede7f6;
+  margin-left: 10px;
+}
+
+.cart_brand {
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.cart_brand:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.login_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login_container .login_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.img_login {
+  height: 320px;
+}
+
+.form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title_login {
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+.label_login {
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  margin: 20px 0px 3px 0px;
+}
+
+.input_login {
+  border-radius: 5px;
+  border-style: solid;
+  height: 1.2rem;
+  border-color: #5e35b1;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.input_login:focus {
+  background-color: #ede7f6;
+}
+
+.button_login {
+  border-radius: 5px;
+  background-color: #5e35b1;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: #fafafa;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  border-color: #5e35b1;
+  border-style: solid;
+  -webkit-transition: background-color 1s, border-color 1s, -webkit-transform 0.3s;
+  transition: background-color 1s, border-color 1s, -webkit-transform 0.3s;
+  transition: transform 0.3s, background-color 1s, border-color 1s;
+  transition: transform 0.3s, background-color 1s, border-color 1s, -webkit-transform 0.3s;
+}
+
+.button_login:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #7c4dff;
+  border-color: #7c4dff;
+}
+
+.span_login {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 900px) {
+  .login_container {
+    margin-top: 3rem;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .img_login {
+    height: 450px;
+  }
 }
 
 body {
   background-color: #fafafa;
   margin: 0;
   padding: 0;
+  font-family: "Work Sans", sans-serif;
+  color: #311b92;
 }
 /*# sourceMappingURL=style.css.map */
