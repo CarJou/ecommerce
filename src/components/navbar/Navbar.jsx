@@ -9,7 +9,9 @@ const Navbar = () => {
         <h1 className="brand_name">AeroTec</h1>
       </Link>
       <div className="buttons_navbar">
-        <img className="cart_brand" src={Cart} alt="shopping cart" />
+        <Link to="/myproducts">
+          <img className="cart_brand" src={Cart} alt="shopping cart" />
+        </Link>
         <Link to="/login">
           <button className="button_signin">Sign in</button>
         </Link>

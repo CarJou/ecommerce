@@ -2,7 +2,7 @@ import React from "react";
 import ButtonAdd from "./ButtonAdd";
 import { Link } from "react-router-dom";
 
-const ContentCard = ({ product }) => {
+const ContentCard = ({ product, setProducts }) => {
   return (
     <>
       <Link
@@ -14,7 +14,11 @@ const ContentCard = ({ product }) => {
       </Link>
       <div className="container_flex">
         <h2 className="priceCard">${product.price}</h2>
-        <ButtonAdd />
+        <ButtonAdd
+          id={product.id}
+          product={product}
+          setProducts={setProducts}
+        />
       </div>
     </>
   );

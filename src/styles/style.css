@@ -188,21 +188,23 @@
 .buttons_navbar .button_signin {
   border-radius: 5px;
   height: 40px;
-  background-color: #ede7f6;
+  background-color: #fafafa;
   letter-spacing: 1.5px;
-  border-color: #ede7f6;
+  border-color: #fafafa;
   cursor: pointer;
   border-style: solid;
   margin-right: 10px;
-  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 1s;
-  transition: -webkit-transform 0.3s, -webkit-box-shadow 1s;
-  transition: transform 0.3s, box-shadow 1s;
-  transition: transform 0.3s, box-shadow 1s, -webkit-transform 0.3s, -webkit-box-shadow 1s;
+  -webkit-transition: background-color 1s, -webkit-transform 0.3s, -webkit-box-shadow 1s;
+  transition: background-color 1s, -webkit-transform 0.3s, -webkit-box-shadow 1s;
+  transition: transform 0.3s, box-shadow 1s, background-color 1s;
+  transition: transform 0.3s, box-shadow 1s, background-color 1s, -webkit-transform 0.3s, -webkit-box-shadow 1s;
 }
 
 .buttons_navbar .button_signin:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  background-color: #ede7f6;
+  border-color: #ede7f6;
   -webkit-box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
           box-shadow: 0 3px 10px rgba(128, 128, 128, 0.699);
 }

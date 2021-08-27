@@ -27,15 +27,17 @@
   .button_signin {
     border-radius: 5px;
     height: 40px;
-    background-color: $purple-clear;
+    background-color: $fafafa;
     letter-spacing: 1.5px;
-    border-color: $purple-clear;
+    border-color: $fafafa;
     cursor: pointer;
     border-style: solid;
     margin-right: 10px;
-    transition: transform 0.3s, box-shadow 1s;
+    transition: transform 0.3s, box-shadow 1s, background-color 1s;
     &:hover {
       transform: scale(1.02);
+      background-color: $purple-clear;
+      border-color: $purple-clear;
       box-shadow: 0 3px 10px $shadow;
     }
   }
