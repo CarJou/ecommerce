@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import RegisterIcon from "../../assets/images/register-pana.svg";
 import { Link } from "react-router-dom";
+import AlertContext from "../../context/alerts/alertsContext";
 
 const Register = () => {
+  const alertContext = useContext(AlertContext);
+  const { alert, showAlert } = alertContext;
+
   const [user, setUser] = useState({
     userName: "",
     email: "",
@@ -17,13 +21,34 @@ const Register = () => {
   };
   const onSubmit = (e) => {
     e.preventDefault();
-    //validar password y campos vacios
+    //campos vacios
+    if (
+      userName.trim() === "" ||
+      email.trim() === "" ||
+      password.trim() === "" ||
+      confirmPassword.trim() === ""
+    ) {
+      showAlert("All fields are required", "alert_error");
+      return;
+    }
+    //password length
+    if (password.length < 6) {
+      showAlert("Password min 6 characters", "alert_error");
+      return;
+    }
+    //password validation
+    if (password !== confirmPassword)
+      showAlert("Passwords do not match", "alert_error");
   };
+
   return (
     <div className="login_container">
       <img src={RegisterIcon} alt="img welcome" className="img_login" />
       <div className="login_content">
         <h1 className="title_login">Register to AeroTec</h1>
+        {alert ? (
+          <div className={`alert ${alert.category}`}>{alert.msg} </div>
+        ) : null}
         <form className="form_container" onSubmit={onSubmit}>
           <label className="label_login" htmlFor="userName">
             Name
